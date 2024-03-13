@@ -30,7 +30,7 @@ public class Simulation {
         builder.append("***\n\n");
 
         for (int i = numberOfDies; i <= 6 * numberOfDies; i++) {
-            builder.append(String.format("%2d : %8d: %.2f ", i, bins.getBin(i), (double) bins.getBin(i) / numberOfTosses * 1got0));
+            builder.append(String.format("%2d : %8d: %.2f ", i, bins.getBin(i), (double) bins.getBin(i) / numberOfTosses));
             for (int j = 0; j < (double) bins.getBin(i) / numberOfTosses * 100; j++) {
                 builder.append("*");
             }
