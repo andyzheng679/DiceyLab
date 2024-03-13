@@ -15,7 +15,7 @@ public class Dice {
         int sum = 0;
 
         for(int i = 0; i < this.numOfDicesRolled; i++){
-            sum += random.nextInt(6) + 1;   //roll dice from 0-5, +1 bc its a 6 sided dice
+            sum += random.nextInt(6) + 1;   //roll dice from 0-5, +1 bc it's a 6 sided dice
         }
         return sum;
     }

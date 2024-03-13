@@ -11,10 +11,12 @@ public class Bins {
     }
 
     public void increment(int rollResult){
+
         resultHolder[rollResult - lowestRoll] += 1;
     }
 
-    public int getBin(int index){
+    public int getBin(int roll){
+        int index = roll - lowestRoll;
 
         return resultHolder[index];
     }
